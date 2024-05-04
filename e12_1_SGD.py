@@ -7,7 +7,7 @@ class SGD:
     def __init__(self, lr=0.01):
         self.lr = lr
 
-    # パラメータの更新、パラメータと勾配を受け取る
+    # パラメータと勾配を受け取り、パラメータの更新
     def update(self, params, grads):
         # パラメータの各キーを順に取得、.keys()は辞書のすべてのキーを返すメソッド
         for key in params.keys():
